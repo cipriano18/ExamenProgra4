@@ -1,8 +1,20 @@
-import { montserrat } from './ui/fonts';
 import './ui/global.css';
-import Head from 'next/head';
-import InstallButton from '../lib/InstallButton';
+import { montserrat } from './ui/fonts';
 
+export const metadata = {
+  title: 'FlowTasks',
+  description: 'Tu centro de control para gestionar tareas con eficiencia y estilo.',
+  themeColor: '#0f172a',
+  manifest: '/manifest.json',
+  icons: {
+    icon: '/icons/icon-192x192.png',
+    apple: '/icons/icon-192x192.png',
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+  },
+};
 
 export default function RootLayout({
   children,
@@ -10,14 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <Head>
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#0f172a" />
-        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
-      </Head>
+    <html lang="es">
       <body className={`${montserrat.className} antialiased`}>
-        <InstallButton />
         {children}
       </body>
     </html>
