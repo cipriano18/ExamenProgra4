@@ -1,6 +1,8 @@
 import { montserrat } from './ui/fonts';
 import './ui/global.css';
-import Head from 'next/head'; // Importar Head
+import Head from 'next/head';
+import InstallButton from '../lib/InstallButton';
+
 
 export default function RootLayout({
   children,
@@ -15,6 +17,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
       </Head>
       <body className={`${montserrat.className} antialiased`}>
+        <InstallButton />
         {children}
       </body>
     </html>
