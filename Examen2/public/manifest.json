@@ -1,22 +1,26 @@
-{
-  "name": "FlowTasks",
-  "short_name": "FlowTasks",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#0f172a",
-  "orientation": "portrait",
-  "icons": [
+{"name":"FlowTasks",
+"short_name":"Gestor de Tareas",
+"theme_color":"#00ff00",
+"background_color":"#ffffff",
+"display":"standalone",
+"orientation":"any",
+"scope":"/",
+"start_url":"/",
+"icons":[
   {
-    "src": "/icons/icon-192x192.png",
-    "sizes": "192x192",
-    "type": "image/png"
+    "src":"/imagen_2025-06-14_185357103-192.png",
+    "type":"image/png",
+    "sizes":"192x192"
   },
   {
-    "src": "/icons/icon-512x512.png",
-    "sizes": "512x512",
-    "type": "image/png"
+    "src":"/imagen_2025-06-14_185357103-256.png",
+    "type":"image/png",
+    "sizes":"256x256"
+  },
+  {
+  "src":"/imagen_2025-06-14_185357103-512.png",
+  "type":"image/png",
+  "sizes":"512x512"
   }
-]
-
+  ]
 }
